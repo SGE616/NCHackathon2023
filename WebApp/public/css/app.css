@@ -1,0 +1,89 @@
+body{
+  background-image: linear-gradient(135deg, #88a5c5, #ff860c); /*blue and orange*/
+}
+.mainHeading{
+  font-style: italic;
+  text-align: center;
+}
+
+.navbar ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #103b0f;
+}
+
+.navbar li {
+  float: left;
+}
+.navbar .acc{
+  float: right; /*to push the account tab to the right*/
+}
+.navbar .highlighted{
+  background-color: #404731 ; /*To denote current page*/
+}
+.navbar a{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 18px; /* height, width */
+  text-decoration: none;
+}
+
+/* Change the link color to black on hover */
+.navbar a:hover {
+  background-color: #000000;
+}
+
+/* The 3D space where the card will flip */
+.scene {
+  width: 300px;
+  height: 400px;
+  perspective: 600px;
+}
+
+.card{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: transform 0.65s;
+  transform-style: preserve-3d;
+}
+
+/* Rows and columns */
+
+.row {
+  display: flex;
+  padding: 10%;
+  justify-content: center;
+  align-items: center;
+}
+
+.column {
+  padding: 5%;
+}
+
+
+.card__face {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  backface-visibility: hidden;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 400px;
+}
+
+.card__face--front {
+  background: red;
+}
+
+.card__face--back {
+  background: blue;
+  transform: rotateY(180deg);
+}
+
+.card.is-flipped {
+  transform: rotateY(180deg);
+}
