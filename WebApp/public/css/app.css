@@ -70,6 +70,9 @@ body{
 
 .column {
   padding: 5%;
+<<<<<<< HEAD
+}
+=======
 }
 
 
@@ -95,3 +98,4 @@ body{
 .card.is-flipped {
   transform: rotateY(180deg);
 }
+>>>>>>> 9456c66020c56dffaf3f79fd62d0f5d122a6007b
