@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home</title>
   <link rel="stylesheet" href="/css/app.css">
+<<<<<<< HEAD
   <link rel="stylesheet" href="/css/chatbox.css">
 </head>
 <body>
@@ -13,5 +14,24 @@
   <%- body -%>  
   <%- include('../partials/chatbox') %> 
   <script src="/javascript/chatbox.js"></script>
+=======
+  <script type="text/javascript"
+src="https://home-c33.nice-incontact.com/inContact/ChatClient/js/embed.min.js"></script>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <%- include('../partials/navbar') %> 
+  <script type="text/javascript">
+document.addEventListener('DOMContentLoaded', function () {
+icPatronChat.init({
+serverHost: 'https://home-c33.nice-incontact.com',
+bus_no: 4598688,
+poc: '7072eb6a-b913-4b0d-b1f3-7ac0e1a7fe18',
+params: ['FirstName', 'Last Name', 'first.last@company.com', '555-555-5555']
+});
+});
+</script>
+  <%- body -%>    
+>>>>>>> 9456c66020c56dffaf3f79fd62d0f5d122a6007b
 </body>
 </html>

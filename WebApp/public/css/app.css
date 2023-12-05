@@ -1,8 +1,12 @@
 body{
-  background-image: linear-gradient(135deg, #88a5c5, #ff860c); /*blue and orange*/
+  background-image: linear-gradient(135deg, #f5f5f5, #ffffff); /*blue and orange*/
 }
 .mainHeading{
-  font-style: italic;
+  font-family: Arial,Helvetica,sans-serif;
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #212529;
   text-align: center;
 }
 
@@ -11,7 +15,11 @@ body{
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #103b0f;
+  font-family: Arial,Helvetica,sans-serif;
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.6;
+  background-color: #183147;
 }
 
 .navbar li {
@@ -62,4 +70,32 @@ body{
 
 .column {
   padding: 5%;
+<<<<<<< HEAD
 }
+=======
+}
+
+
+.card__face {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  backface-visibility: hidden;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 400px;
+}
+
+.card__face--front {
+  background: rgb(255, 0, 0);
+}
+
+.card__face--back {
+  background: blue;
+  transform: rotateY(180deg);
+}
+
+.card.is-flipped {
+  transform: rotateY(180deg);
+}
+>>>>>>> 9456c66020c56dffaf3f79fd62d0f5d122a6007b
