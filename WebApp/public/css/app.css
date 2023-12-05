@@ -29,7 +29,7 @@ body{
   float: right; /*to push the account tab to the right*/
 }
 .navbar .highlighted{
-  background-color: #404731 ; /*To denote current page*/
+  background-color: #2e343a ; /*To denote current page*/
 }
 .navbar a{
   display: block;
