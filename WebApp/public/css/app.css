@@ -63,27 +63,3 @@ body{
 .column {
   padding: 5%;
 }
-
-
-.card__face {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  backface-visibility: hidden;
-  text-align: center;
-  vertical-align: middle;
-  line-height: 400px;
-}
-
-.card__face--front {
-  background: red;
-}
-
-.card__face--back {
-  background: blue;
-  transform: rotateY(180deg);
-}
-
-.card.is-flipped {
-  transform: rotateY(180deg);
-}
