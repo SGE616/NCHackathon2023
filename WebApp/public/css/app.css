@@ -29,7 +29,7 @@ body{
   float: right; /*to push the account tab to the right*/
 }
 .navbar .highlighted{
-  background-color: #404731 ; /*To denote current page*/
+  background-color: #2e343a ; /*To denote current page*/
 }
 .navbar a{
   display: block;
@@ -70,32 +70,4 @@ body{
 
 .column {
   padding: 5%;
-<<<<<<< HEAD
 }
-=======
-}
-
-
-.card__face {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  backface-visibility: hidden;
-  text-align: center;
-  vertical-align: middle;
-  line-height: 400px;
-}
-
-.card__face--front {
-  background: rgb(255, 0, 0);
-}
-
-.card__face--back {
-  background: blue;
-  transform: rotateY(180deg);
-}
-
-.card.is-flipped {
-  transform: rotateY(180deg);
-}
->>>>>>> 9456c66020c56dffaf3f79fd62d0f5d122a6007b
