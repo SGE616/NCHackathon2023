@@ -1,12 +1,37 @@
 <div class="navbar">
     <ul>
-        <li><a <%-(path == '/')? 'class=highlighted':'' %> href="/">Home</a></li>
-        <li><a <%-(path == '/About')? 'class=highlighted':'' %> href="/About">About</a></li>
-        <li><a <%-(path == '/IT%20Services')? 'class=highlighted':'' %> href="/IT Services">IT Services</a></li>
-        <li><a <%-(path == '/Travel%20Support')? 'class=highlighted':'' %> href="/Travel Support">Travel Support</a></li>
-        <li><a <%-(path == '/New%20Hire%20Information')? 'class=highlighted':'' %> href="/New Hire Information">New Hire Information</a></li>
-        <li><a <%-(path == '/HR%20Portal')? 'class=highlighted':'' %> href="/HR Portal">HR Portal</a></li>
+        <div = class="dropdown">
+            <li><a <%-(path == '/')? 'class=highlighted':'' %> href="/">Home</a></li>
+            <div class="dropdown-content">
+                <a href="#">Subheading 1</a>
+                <a href="#">Subheading 2</a>
+                <a href="#">Subheading 3</a>
+            </div>
+        </div>
+        <div = class="dropdown">
+            <li><a <%-(path == '/About')? 'class=highlighted':'' %> href="/About">About</a></li>
+            <div class="dropdown-content">
+                <a href="#">Subheading A</a>
+                <a href="#">Subheading B</a>
+            </div>
+        </div>
+        <div = class="dropdown">
+            <li><a <%-(path == '/IT%20Services')? 'class=highlighted':'' %> href="/IT Services">IT Services</a></li>
+            <div class="dropdown-content">
+                <a href="#">Subheading X</a>
+                <a href="#">Subheading Y</a>
+                <a href="#">Subheading Z</a>
+            </div>
+        </div>
+        <div = class="dropdown">    
+            <li><a <%-(path == '/Travel%20Support')? 'class=highlighted':'' %> href="/Travel Support">Travel Support</a></li>
+        </div>    
+        <div = class="dropdown">    
+            <li><a <%-(path == '/New%20Hire%20Information')? 'class=highlighted':'' %> href="/New Hire Information">New Hire Information</a></li>
+        </div>
+        <div = class="dropdown">    
+            <li><a <%-(path == '/HR%20Portal')? 'class=highlighted':'' %> href="/HR Portal">HR Portal</a></li>
+        </div>
         <li class="acc"><a href="/account">Netcracker</a></li>
-        <li><a <%-(path == '/Internal Portals')? 'class=highlighted':'' %> href="/Internal Portals">Internal Portals</a></li>
     </ul>
 </div>
