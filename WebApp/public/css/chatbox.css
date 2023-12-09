@@ -24,7 +24,7 @@ body {
   display: flex;
   align-items: center;
   padding: 0px 30px;
-  background-color: #0652c0;
+  background-color: #183147;
   color: var(--light-color);
   font-size: 1.5rem;
 }
