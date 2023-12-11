@@ -68,11 +68,6 @@ app.get('/HR%20Portal', (req, res) => {
     res.render('pages/HRPortal',{path:req.path});
 })
 
-// getting the response from the Chatbot
-app.post('/chat', async(req, res) => {
-    
-})
-
 app.use((req, res, next) => {
     res.send('error 404, page not found!');
 })
